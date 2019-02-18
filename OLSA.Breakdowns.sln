@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLSA.Breakdowns.WPFClient", "OLSA.Breakdowns.WPFClient\OLSA.Breakdowns.WPFClient.csproj", "{7B4AE32A-4BF9-4DED-BA52-CD04D69E53DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLSA.Breakdowns.Models", "OLSA.Breakdowns.Models\OLSA.Breakdowns.Models.csproj", "{A31A476A-485C-47AF-B2EA-0627F6BEDDAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLSA.Breakdowns.IServices", "OLSA.Breakdowns.IServices\OLSA.Breakdowns.IServices.csproj", "{35452038-F6AB-4E2E-931B-844222C5EE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLSA.Breakdowns.FakeServices", "OLSA.Breakdowns.FakeServices\OLSA.Breakdowns.FakeServices.csproj", "{CEEA160F-CD18-4587-8379-87FB062141C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLSA.Breakdowns.ViewModels", "OLSA.Breakdowns.ViewModels\OLSA.Breakdowns.ViewModels.csproj", "{E4557D44-5799-4904-B37A-CA79A6FC5723}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{7B4AE32A-4BF9-4DED-BA52-CD04D69E53DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4AE32A-4BF9-4DED-BA52-CD04D69E53DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4AE32A-4BF9-4DED-BA52-CD04D69E53DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31A476A-485C-47AF-B2EA-0627F6BEDDAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31A476A-485C-47AF-B2EA-0627F6BEDDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31A476A-485C-47AF-B2EA-0627F6BEDDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31A476A-485C-47AF-B2EA-0627F6BEDDAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35452038-F6AB-4E2E-931B-844222C5EE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35452038-F6AB-4E2E-931B-844222C5EE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35452038-F6AB-4E2E-931B-844222C5EE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35452038-F6AB-4E2E-931B-844222C5EE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEA160F-CD18-4587-8379-87FB062141C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEA160F-CD18-4587-8379-87FB062141C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEA160F-CD18-4587-8379-87FB062141C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEA160F-CD18-4587-8379-87FB062141C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4557D44-5799-4904-B37A-CA79A6FC5723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4557D44-5799-4904-B37A-CA79A6FC5723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4557D44-5799-4904-B37A-CA79A6FC5723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4557D44-5799-4904-B37A-CA79A6FC5723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

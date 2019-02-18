@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OLSA.Breakdowns.WPFClient
+namespace OLSA.Breakdowns.WPFClient.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UsersView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UsersView : Page
     {
-        public MainWindow()
+        public UsersView()
         {
             InitializeComponent();
-
-
         }
     }
 }

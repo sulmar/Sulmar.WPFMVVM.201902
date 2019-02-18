@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OLSA.Breakdowns.WPFClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="750" Width="800">
+    
+    <StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Column="0"
+                    Background="Blue" >
+                <StackPanel>
+                    <Calendar/>
+                    <Label Content="Opis" />
+                </StackPanel>
+            </Button>   
+
+            <!--<Button Background="Green" Content="Hello World" />-->
+
+
+            <Button Grid.Column="2">
+                <Button.Background>
+                    <SolidColorBrush Color="Yellow" />
+                </Button.Background>
+                <StackPanel>
+                    <Calendar/>
+                    <Label Content="Opis" />
+                </StackPanel>
+            </Button>
+
+        </Grid>
+
+
+    </StackPanel>
 </Window>
