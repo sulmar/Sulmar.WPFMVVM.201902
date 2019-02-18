@@ -7,11 +7,12 @@
       xmlns:vm="clr-namespace:OLSA.Breakdowns.ViewModels;assembly=OLSA.Breakdowns.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      DataContext="{Binding UsersViewModel, Source={StaticResource Locator}}"
       Title="UsersView">
 
-    <Page.DataContext>
+    <!--<Page.DataContext>
         <vm:UsersViewModel />
-    </Page.DataContext>
+    </Page.DataContext>-->
 
     <Grid>
 

@@ -17,11 +17,11 @@ namespace OLSA.Breakdowns.ViewModels
 
         private readonly IUserService userService;
 
-        public UsersViewModel()
-            : this(new FakeUserService(new UserFaker()))
-        {
+        //public UsersViewModel()
+        //    : this(new FakeUserService(new UserFaker()))
+        //{
 
-        }
+        //}
 
         public UsersViewModel(IUserService userService)
         {
