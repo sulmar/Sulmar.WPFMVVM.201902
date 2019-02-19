@@ -35,6 +35,9 @@ namespace OLSA.Breakdowns.ViewModels
             container.RegisterType<IUserService, FakeUserService>();
             container.RegisterType<UserFaker>();
 
+            container.RegisterType<IWorkplaceService, FakeWorkplaceService>();
+            container.RegisterType<WorkplaceFaker>();
+
             // Install-Package CommonServiceLocation
             // Install-Package Unity.ServiceLocation
             ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
@@ -43,7 +46,9 @@ namespace OLSA.Breakdowns.ViewModels
 
         // public UsersViewModel UsersViewModel => new UsersViewModel(new FakeUserService(new UserFaker()));
 
+        public ShellViewModel ShellViewModel => ServiceLocator.Current.GetInstance<ShellViewModel>();
         public UsersViewModel UsersViewModel => ServiceLocator.Current.GetInstance<UsersViewModel>();
+        public WorkplacesViewModel WorkplacesViewModel => ServiceLocator.Current.GetInstance<WorkplacesViewModel>();
 
     }
 }
