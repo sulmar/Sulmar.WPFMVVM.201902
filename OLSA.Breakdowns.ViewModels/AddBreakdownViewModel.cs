@@ -34,6 +34,8 @@ namespace OLSA.Breakdowns.ViewModels
         {
             breakdownService.Add(Breakdown);
 
+            Breakdown.Status = BreakdownStatus.Accepted;
+
         }
 
         public bool IsWorkplaceSelected => SelectedEntity != null;

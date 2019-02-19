@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:OLSA.Breakdowns.WPFClient.Views"
+      DataContext="{Binding AddBreakdownViewModel, Source={StaticResource Locator}}"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddBreakdownView">
@@ -15,7 +16,10 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <DataGrid ItemsSource="{Binding Entities}" >
+        <DataGrid 
+            ItemsSource="{Binding Entities}" 
+            SelectedItem="{Binding SelectedEntity}"
+            Margin="0,-2,0,2" >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" />
             </DataGrid.Columns>
@@ -23,8 +27,9 @@
 
         <DockPanel Grid.Column="1">
             <Label DockPanel.Dock="Top">Description</Label>
-            <Button DockPanel.Dock="Bottom">Send</Button>
-            <TextBox TextWrapping="Wrap" />
+            <Button Style="{StaticResource SendButtonStyle}" DockPanel.Dock="Bottom" Command="{Binding SendCommand}">Send</Button>
+            <Label Content="{Binding Breakdown.Status}" DockPanel.Dock="Bottom" />
+            <TextBox TextWrapping="Wrap" Text="{Binding Breakdown.Description, UpdateSourceTrigger=PropertyChanged}" />
         </DockPanel>
 
 

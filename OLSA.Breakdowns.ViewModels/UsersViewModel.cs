@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OLSA.Breakdowns.ViewModels
-{
+{   
     public class UsersViewModel : ViewModelBase
     {
         public IEnumerable<User> Users { get; set; }
@@ -16,12 +16,6 @@ namespace OLSA.Breakdowns.ViewModels
         public User SelectedUser { get; set; }
 
         private readonly IUserService userService;
-
-        //public UsersViewModel()
-        //    : this(new FakeUserService(new UserFaker()))
-        //{
-
-        //}
 
         public UsersViewModel(IUserService userService)
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OLSA.Breakdowns.IServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,12 @@ namespace OLSA.Breakdowns.ViewModels
         public ICommand ShowUsersCommand { get; }
         public ICommand AddBreakdownCommand { get; }
 
-        public ShellViewModel()
+        private readonly INavigationService navigationService;
+
+        public ShellViewModel(INavigationService navigationService)
         {
+            this.navigationService = navigationService;
+
             ShowUsersCommand = new RelayCommand(ShowUsers, ()=>CanShowUsers);
             AddBreakdownCommand = new RelayCommand(AddBreakdown);
         }
@@ -21,7 +26,7 @@ namespace OLSA.Breakdowns.ViewModels
 
         public void AddBreakdown()
         {
-
+            navigationService.Navigate("AddBreakdownView");
         }
 
         public void ShowWorkplaces()

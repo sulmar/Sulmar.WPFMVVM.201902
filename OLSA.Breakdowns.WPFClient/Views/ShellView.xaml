@@ -7,13 +7,15 @@
         DataContext="{Binding ShellViewModel, Source={StaticResource Locator}}"
         mc:Ignorable="d"
         Title="ShellView" Height="450" Width="800">
+
+    
     <Grid>
 
         <DockPanel>
             <Border DockPanel.Dock="Top" >
                 <DockPanel>
                     <Button Command="{Binding AddBreakdownCommand}">Add breakdown</Button>
-                    <Button>Workplaces</Button>
+                    <Button >Workplaces</Button>
                     <Button>Breakdowns</Button>
                     <Button Command="{Binding ShowUsersCommand}">Users</Button>
 
@@ -29,7 +31,7 @@
                 <StatusBarItem>Item 3</StatusBarItem>
             </StatusBar>
 
-            <Frame Source="WorkplacesView.xaml" />
+            <Frame x:Name="ViewFrame" Source="UsersView.xaml" />
 
         </DockPanel>
 

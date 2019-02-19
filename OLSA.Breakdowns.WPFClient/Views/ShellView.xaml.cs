@@ -21,7 +21,7 @@ namespace OLSA.Breakdowns.WPFClient.Views
     {
         public ShellView()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
     }
 }

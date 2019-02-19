@@ -1,6 +1,7 @@
 ﻿using CommonServiceLocator;
 using OLSA.Breakdowns.FakeServices;
 using OLSA.Breakdowns.IServices;
+using OLSA.Breakdowns.WPFClient.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,6 +41,8 @@ namespace OLSA.Breakdowns.ViewModels
 
             container.RegisterType<IBreakdownService, FakeBreakdownService>();
 
+            container.RegisterSingleton<INavigationService, FrameNavigationService>();
+
             // Install-Package CommonServiceLocation
             // Install-Package Unity.ServiceLocation
             ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
@@ -51,6 +54,6 @@ namespace OLSA.Breakdowns.ViewModels
         public ShellViewModel ShellViewModel => ServiceLocator.Current.GetInstance<ShellViewModel>();
         public UsersViewModel UsersViewModel => ServiceLocator.Current.GetInstance<UsersViewModel>();
         public WorkplacesViewModel WorkplacesViewModel => ServiceLocator.Current.GetInstance<WorkplacesViewModel>();
-
+        public AddBreakdownViewModel AddBreakdownViewModel => ServiceLocator.Current.GetInstance<AddBreakdownViewModel>();
     }
 }
