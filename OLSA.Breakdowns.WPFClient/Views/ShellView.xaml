@@ -12,6 +12,7 @@
         <DockPanel>
             <Border DockPanel.Dock="Top" >
                 <DockPanel>
+                    <Button Command="{Binding AddBreakdownCommand}">Add breakdown</Button>
                     <Button>Workplaces</Button>
                     <Button>Breakdowns</Button>
                     <Button Command="{Binding ShowUsersCommand}">Users</Button>

@@ -38,6 +38,8 @@ namespace OLSA.Breakdowns.ViewModels
             container.RegisterType<IWorkplaceService, FakeWorkplaceService>();
             container.RegisterType<WorkplaceFaker>();
 
+            container.RegisterType<IBreakdownService, FakeBreakdownService>();
+
             // Install-Package CommonServiceLocation
             // Install-Package Unity.ServiceLocation
             ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
